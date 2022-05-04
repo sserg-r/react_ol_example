@@ -1,0 +1,104 @@
+#Infos {
+  z-index: 1;
+}
+.icon-start {
+  animation-duration: 1s;
+  animation-name: rotateStart;
+  animation-fill-mode: forwards;
+}
+
+.icon-end {
+  animation-duration: 1s;
+  animation-name: rotateEnd;
+  animation-fill-mode: forwards;
+}
+
+.hide {
+  height: 0;
+  opacity: 0;
+  display: none;
+}
+
+.slide-in {
+  animation-duration: 1s;
+  animation-name: slideIn;
+  animation-fill-mode: forwards;
+}
+
+.slide-out {
+  animation-duration: 1s;
+  animation-name: slideOut;
+  animation-fill-mode: forwards;
+}
+
+.fade-in {
+  animation-duration: 1s;
+  animation-name: fadeIn;
+  animation-fill-mode: forwards;
+}
+
+.fade-out {
+  animation-duration: 1s;
+  animation-name: fadeOut;
+  animation-fill-mode: forwards;
+}
+
+@keyframes slideIn {
+  0% {
+    height: 0;
+    opacity: 0;
+  }
+
+  100% {
+    height: 150px;
+    opacity: 1;
+  }
+}
+@keyframes slideOut {
+  0% {
+    height: 150px;
+    opacity: 1;
+  }
+
+  100% {
+    height: 0;
+    opacity: 0;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes rotateStart {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-90deg);
+  }
+}
+
+@keyframes rotateEnd {
+  from {
+    transform: rotate(-90deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}

@@ -1,0 +1,5 @@
+.graticule-button {
+  cursor: pointer;
+  position: absolute;
+  z-index: 1;
+}
